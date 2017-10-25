@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(153, 136, 136);
+}
+
+
+
+.selections{
+    padding-top:5em;
+}
+
+.choices{
+    padding-top: 5em;
+}
+
+.rock{
+    background-image:url("images/rock.png");
+    background-size: 100px 100px;
+    background-color:transparent;
+    background-repeat:no-repeat;
+    border:none;
+    height:100px;
+    width:100px;
+    outline: none;
+    
+}
+.paper{
+    background-image:url("images/paper.png");
+    background-size: 100px 100px;
+    background-color:transparent;
+    background-repeat:no-repeat;
+    border:none;
+    height:100px;
+    width:100px;
+    outline:none;
+}
+.scissors{
+    background-image:url("images/scissors.png");
+    background-size: 100px 100px;
+    background-color:transparent;
+    background-repeat:no-repeat;
+    border:none;
+    height:100px;
+    width:100px;
+    outline:none;
+}
+.question{
+    background-image:url("images/questionMark.png");
+    background-size: 100px 100px;
+    background-color:transparent;
+    background-repeat:no-repeat;
+    border:none;
+    height:100px;
+    width:100px;
+    outline:none;
+}
+.reset{
+    padding-top: 5em;
+    border:none;
+    background-color:transparent;
+    outline:none;
+}
+.reset img{
+    width:100px;
+    height:100px;
+    background-color:transparent;
+}

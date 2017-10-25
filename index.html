@@ -1,16 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<title>SET THE TITLE!!!</title>
-	<!--Might be good to link bootstrap here-->
+	<title>Rock Paper Scissors</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
-	<!--write html below this line-->
-	
-	
-	<!--write html above this line-->
-	<!--the following line is used to link your javascript file.-->
+	<div class="container-fluid">
+		<div class="row header">
+			<div class="col-xs-12 text-center">
+				<h1 class="game">Rock, Paper, Scissors</h1>
+			</div>
+		</div>
+		<div class="row selections">
+			<div class="col-xs-4 text-right">
+				<button id="player" class="question"></button>
+				<h1>Player</h1>
+				<h5>Score:<span id="playerScore"></span></h5>
+			</div>
+			<div class="col-xs-4 myResults text-center" id="myResults"></div>
+			<div class="col-xs-4 text-left">
+				<button id="generate" class="question"></button>
+				<h1>Computer</h1>
+				<h5>Score:<span id="computerScore"></span></h5>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 scoreDiv hidden">
+				<div class="scoreboard" id="scoreboard"></div>
+				<button>PLAY AGAIN?</button>
+
+			</div>
+		</div>
+		<div class="row choices">
+			<div class="col-xs-2 col-xs-offset-3 text-center">
+				<button onclick="play('rock')" class="rock" id="rock"></button>
+			</div>
+			<div class="col-xs-2 text-center">
+				<button onclick="play('paper')" class="paper" id="paper"></button>
+			</div>
+			<div class="col-xs-2 text-center">
+				<button onclick="play('scissors')" class="scissors" id="scissors"></button>
+			</div>
+		</div>
+		<div class="row reset">
+			<div class="col-xs-12 text-center">
+				<button onclick="reset()" class="reset" id="reset"><img src="assets/images/Reset.png" alt=""></button>
+			</div>
+		</div>
+	</div>
 	<script src="app.js"></script>
+	<!-- <script src="app2.js"></script> -->
 </body>
+
 </html>
