@@ -1,7 +1,11 @@
 body{
-    background-color: rgb(153, 136, 136);
+    background-color: rgba(18, 31, 71, 0.808);
+    color:whitesmoke;
 }
 
+.scoreDiv button{
+    color:rgba(18, 31, 71, 0.808);
+}
 
 
 .selections{

@@ -13,25 +13,30 @@
 		<div class="row header">
 			<div class="col-xs-12 text-center">
 				<h1 class="game">Rock, Paper, Scissors</h1>
+				<h3><em>First to 3 wins!</em></h3>
 			</div>
 		</div>
 		<div class="row selections">
 			<div class="col-xs-4 text-right">
 				<button id="player" class="question"></button>
 				<h1>Player</h1>
-				<h5>Score:<span id="playerScore"></span></h5>
+				<h5>Score:
+					<span id="playerScore"></span>
+				</h5>
 			</div>
 			<div class="col-xs-4 myResults text-center" id="myResults"></div>
 			<div class="col-xs-4 text-left">
 				<button id="generate" class="question"></button>
 				<h1>Computer</h1>
-				<h5>Score:<span id="computerScore"></span></h5>
+				<h5>Score:
+					<span id="computerScore"></span>
+				</h5>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-12 scoreDiv hidden">
+			<div class="col-xs-12 scoreDiv hidden text-center" id="scoreDiv">
 				<div class="scoreboard" id="scoreboard"></div>
-				<button>PLAY AGAIN?</button>
+				<button onclick="playAgain()">PLAY AGAIN?</button>
 
 			</div>
 		</div>
@@ -48,7 +53,9 @@
 		</div>
 		<div class="row reset">
 			<div class="col-xs-12 text-center">
-				<button onclick="reset()" class="reset" id="reset"><img src="assets/images/Reset.png" alt=""></button>
+				<button onclick="reset()" class="reset" id="resetBtn">
+					<img src="assets/images/Reset.png" alt="">
+				</button>
 			</div>
 		</div>
 	</div>
